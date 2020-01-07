@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 550px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.block {
+  min-height: 40px;
+  background: dodgerblue;
+  flex: 1;
+}
+
+.centered-h-v {
+  justify-content: center;
+  align-items: center;
+}
+
+.aligned-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+body {
+  height: 200vh;
+}
+
+#header_main {
+  position: fixed;
+  background: silver;
+  height: 20px;
+  width: 100%;
+  z-index: 10;
+}
+
+#content_main {
+  position: relative;
+  top: 20px;
+}
+
+
+.parent {
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    position: relative;
+}
+
+.child {
+    height: 20px;
+    width: 20px;
+    background: orange;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
