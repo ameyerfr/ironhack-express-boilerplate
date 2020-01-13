@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM - Intro</title>
+    <script>
+      console.log("hello, world \n: im a inline script");
+    </script>
+    <style>
+      .ironhacker {
+        left: 0;
+        transition: all 1s linear;
+        position: relative;
+      }
+
+      .is-active {
+        color: red;
+        left: 100px;
+      }
+    </style>
+    <script src="./intro.js"></script>
+  </head>
+  <body>
+    <h1 class="title main">The D.O.M (an A.P.I)</h1>
+    <p id="my-intro">
+      The goal : get 100% control over ANY HTML/XML document.
+    </p>
+    <h2 class="title">foo</h2>
+    <button id="my-btn">ok</button>
+    <hr />
+    <!-- ul.ironhackers>li.ironhacker*30>{ironhacker $} -->
+    <!-- <ul class="ironhackers">
+        <li class="ironhacker">ironhacker 1</li>
+        <li class="ironhacker">ironhacker 2</li>
+        <li class="ironhacker">ironhacker 3</li>
+        <li class="ironhacker">ironhacker 4</li>
+        <li class="ironhacker">ironhacker 5</li>
+        <li class="ironhacker">ironhacker 6</li>
+        <li class="ironhacker">ironhacker 7</li>
+        <li class="ironhacker">ironhacker 8</li>
+        <li class="ironhacker">ironhacker 9</li>
+        <li class="ironhacker">ironhacker 10</li>
+        <li class="ironhacker">ironhacker 11</li>
+        <li class="ironhacker">ironhacker 12</li>
+        <li class="ironhacker">ironhacker 13</li>
+        <li class="ironhacker">ironhacker 14</li>
+        <li class="ironhacker">ironhacker 15</li>
+        <li class="ironhacker">ironhacker 16</li>
+        <li class="ironhacker">ironhacker 17</li>
+        <li class="ironhacker">ironhacker 18</li>
+        <li class="ironhacker">ironhacker 19</li>
+        <li class="ironhacker">ironhacker 20</li>
+        <li class="ironhacker">ironhacker 21</li>
+        <li class="ironhacker">ironhacker 22</li>
+        <li class="ironhacker">ironhacker 23</li>
+        <li class="ironhacker">ironhacker 24</li>
+        <li class="ironhacker">ironhacker 25</li>
+        <li class="ironhacker">ironhacker 26</li>
+        <li class="ironhacker">ironhacker 27</li>
+        <li class="ironhacker">ironhacker 28</li>
+        <li class="ironhacker">ironhacker 29</li>
+        <li class="ironhacker">ironhacker 30</li>
+    </ul> -->
+    <hr />
+    <div id="modifying-document">
+      <div class="widget">
+        <input
+          id="user-input"
+          type="text"
+          class="input"
+          placeholder="type something here and press done"
+        />
+        <button id="btn-add-text" class="btn">done</button>
+      </div>
+      <p id="my-content"></p>
+    </div>
+
+    <hr />
+
+    <div id="modifying-ironhackers">
+      <form class="widget">
+        <input
+          id="ironhacker-name"
+          type="text"
+          class="input"
+          placeholder="type something here and press done"
+        />
+        <button id="btn-add-ironhacker" class="btn">add 1 hacker</button>
+      </form>
+      <ul class="ironhackers" id="ironhackers"></ul>
+    </div>
+  </body>
+</html>

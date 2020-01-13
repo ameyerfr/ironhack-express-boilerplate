@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Color block</title>
+    <style>
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .is-spinning {
+        animation: spin 1s infinite;
+      }
+
+      .loader {
+        width: 100px;
+        height: 100px;
+        background: dodgerblue;
+        margin: 10px;
+      }
+    </style>
+    <script src="./loader.js"></script>
+  </head>
+  <body>
+    <button id="btn-spin">spin it !!!</button>
+    <div class="loader"></div>
+    <div class="loader"></div>
+    <div class="loader"></div>
+    <div class="loader"></div>
+    <div class="loader"></div>
+    <div class="loader"></div>
+    <p>
+      code a small js script : targeting the button AND the loader @click on the
+      button : element.classList.toggle() the "is-spinning" css class on the
+      loader :D
+    </p>
+  </body>
+</html>
