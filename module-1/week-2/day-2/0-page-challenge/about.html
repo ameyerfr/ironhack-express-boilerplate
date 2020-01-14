@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/rate-widget.js"></script>
+    <script type="module" src="./js/users-cards.js"></script>
+  </head>
+  <body>
+    <header id="header-main">
+      <div class="logo">
+        <a href="/" class="link">Fake Company</a>
+      </div>
+      <nav class="nav" id="nav-main">
+        <a href="/" class="link">home</a>
+        <a href="about.html" class="link">about</a>
+        <a href="contact.html" class="link">contact</a>
+      </nav>
+      <nav id="nav-burger" class="link fa fa-bars fa-lg"></nav>
+    </header>
+    <div id="wrap-main">
+      <aside id="sidebar-main">
+        <h2 class="title">Latest news</h2>
+        <ul class="list">
+          <li class="item is-clickable">Lorem ipsum dolor sit amet.</li>
+          <li class="item is-clickable">Lorem, ipsum dolor.</li>
+          <li class="item is-clickable">Lorem ipsum dolor sit.</li>
+          <li class="item is-clickable">Lorem, ipsum.</li>
+          <li class="item is-clickable">Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <h2 class="title">Latest users</h2>
+        <ul class="list">
+          <li class="item is-clickable">foo</li>
+          <li class="item is-clickable">bar</li>
+          <li class="item is-clickable">baz</li>
+        </ul>
+      </aside>
+      <main id="content-main">
+        <h1 class="title main">About: D.I.Y</h1>
+        <p>Create a rate widget:<br>
+          One input number + one display element (ex: p)<br>
+          The input min value is 0, the max is 10.<br>
+          input@input : display the current input value in the p<br>
+          if the value if between 0 and 4 => color red<br>
+          if the value if between 4 and 7 => color orange<br>
+          if the value if between 7 and 10 => color green<br><br>
+          Bonus: Code an other widget display the same information as a progress-bar
+        </p>
+        <div id="rate-widget" class="has-border-top">
+          <h1 class="title">Rate Widget</h1>
+          <input class="input" type="number" id="rate" min="0" max="10" step="1">
+          <p class="target">no value yet</p>
+        </div>
+
+        <div id="users-card-widget" class="has-border-top">
+          <h2 class="title main">Next D.I.Y</h2>
+          <p>Create a user-cards widget:<br>
+            Code a function taking an array of users as argument.<br>
+            Each user is an object (name, age, email, avatar);<br>
+            Use the DOM API to display each user information.<br>
+            Add a bit of CSS for styling.
+          </p>
+          <div id="users-widget-target"></div>
+        </div>
+
+      </main>
+    </div>
+
+    <footer id="footer-main">
+      <ul class="social-icons">
+        <li class="item"><i class="link fab fa-twitter"></i></li>
+        <li class="item"><i class="link fab fa-facebook-square"></i></li>
+        <li class="item"><i class="link fas fa-share-alt"></i></li>
+      </ul>
+      <span class="copyright">
+        &copy;Ironhack@Paris-0120
+      </span>
+    </footer>
+  </body>
+</html>

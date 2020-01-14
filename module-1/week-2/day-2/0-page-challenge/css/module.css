@@ -1,0 +1,123 @@
+.user-card {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 0.3rem;
+  margin: 10px 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-card img {
+  height: 80px;
+}
+
+#rate-widget .target {
+  font-size: 2rem;
+}
+
+#rate-widget .input {
+  height: 32px;
+  width: 220px;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  padding: 3px 0 3px 20px;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+#rate-widget .target {
+  transition: color 1s linear;
+}
+
+.title {
+  margin: 10px 0 13px;
+  font-size: 1.8rem;
+}
+
+#nav-main {
+  display: flex;
+}
+
+#nav-main .link:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+#header-main .logo {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#header-main .logo:hover a {
+  color: inherit;
+}
+
+.list {
+  border: 1px solid;
+  border-radius: 0.3rem;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 100%;
+}
+
+.form .label {
+  margin: 7px 0;
+}
+
+.form .input {
+  width: 100%;
+  padding: 3px 0 3px 20px;
+}
+
+.form .input,
+.form .btn {
+  height: 32px;
+  border: 1px solid;
+  border-radius: 0.3rem;
+}
+
+.form .btn {
+  background: none;
+  margin-top: 20px;
+  max-width: 220px;
+}
+
+.form .btn:hover {
+  background: black;
+  color: whitesmoke;
+}
+
+.social-icons {
+  display: flex;
+  max-width: 120px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+@media (max-width: 550px) {
+  #nav-main {
+    display: none;
+  }
+
+  #nav-burger {
+    display: block;
+  }
+}
+
+@media (min-width: 550px) {
+  #nav-burger {
+    display: none;
+  }
+}
