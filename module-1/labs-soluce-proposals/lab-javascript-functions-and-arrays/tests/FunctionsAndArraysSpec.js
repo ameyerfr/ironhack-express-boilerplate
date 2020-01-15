@@ -58,7 +58,7 @@ describe('Finding Longest Word - findLongestWord', function () {
     }
   });
 });
-/*
+
 describe('Calculating a Sum - sumArray', function () {
   it('Defines sumArray', function () {
     expect(typeof sumArray).toBe('function');
@@ -244,5 +244,5 @@ describe('Bonus Quest - greatestProduct', function () {
     expect(greatestProduct(matrix)).toBe(16);
   });
 });
- */
+
 
