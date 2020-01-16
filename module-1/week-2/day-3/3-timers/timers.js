@@ -6,7 +6,7 @@ class Chrono {
   countTime() {
     console.log(this); // represents the current Object
 
-    setInterval(() => {
+    const id = setInterval(() => {
       console.log(this.time);
       this.time++;
     }, 1000);
