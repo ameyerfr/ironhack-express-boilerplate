@@ -1,0 +1,15 @@
+Hello Squad !
+You made it through module-1's courses !
+Congrats !
+We are super excited for next week :)
+
+-------------------------
+MODULE 1 REVIEW CHALLENGE
+-------------------------
+0 - Paper time II
+1 - exercice: function param return
+2 - exercice: artists-cards
+3 - creative session: find your game idea !
+4 - exercice: sum of ranges
+5 - exercice: handling lists
+6 - check-in with TA's: pitch your game project !
