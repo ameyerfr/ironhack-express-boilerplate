@@ -1,0 +1,19 @@
+{
+  "name": "3-setup-code-along",
+  "version": "1.0.0",
+  "description": "some cool code",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server.js"
+  },
+  "keywords": [
+    "baby-steps"
+  ],
+  "author": "gui",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.0"
+  }
+}

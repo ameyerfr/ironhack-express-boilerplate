@@ -1,0 +1,53 @@
+<div class="page about">
+    <h1 class="title">{{title}}</h1>
+
+    <p>
+        {{content}}
+    </p>
+    <p>
+        Try to add an image here :)
+    </p>
+
+    <img class="avatar" src="/img/guillaume.png">
+    
+    {{#if loveCoding}}
+    <p>Yeah, I LOVE coding !</p>
+    {{else}}
+    <p>Nope, I HATE coding !</p>
+    {{/if}}
+
+
+    <hr>
+
+    {{#unless users}}
+    <p>sorry, no users (yet)</p>
+    {{/unless}}
+
+    <hr>
+
+    <ul>
+        {{!-- special hsb vars accessible in each loops : @key + @index + @first + @last --}}
+        {{#each users}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <hr>
+    
+    {{#with villain}}
+    <h3 class="title">Supa Villain</h3>
+    <div>
+        {{name}} {{colorSide}}
+    </div>
+    {{/with}}
+
+    <hr>
+
+    <h2 class="title">D.I.Y</h2>
+    <p>
+        Use an array to store some heroes/villains.<br>
+        Code a each loop to display their name AND their sideColor.<br>
+    </p>
+
+
+</div>

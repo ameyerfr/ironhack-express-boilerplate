@@ -1,0 +1,45 @@
+<div class="page">
+    <h1 class="title">home</h1>
+    {{text}}
+
+    <p>{{count}}</p>
+
+    <hr>
+
+    {{#if text}}
+    <p>YAY ! I LOVE coding !!!!</p>
+    {{else}}
+    <p>NAY ! I HATE coding !!!!</p>
+    {{/if}}
+    <hr>
+
+    {{#unless user}}
+    <p>sorry, no users yet...</p>
+    {{/unless}}
+    <hr>
+
+    {{#if user}}
+    <p>{{user.name}}</p>
+    {{/if}}
+
+    <hr>
+
+    <ul>
+        {{#each fruits}}
+        <li>{{@index}} - {{this}}</li>
+        {{/each}}
+    </ul>
+
+    <hr>
+
+    <ul>
+        {{#each user}}
+        <li>{{@key}} - {{this}}</li>
+        {{/each}}
+    </ul>
+
+    <hr>
+
+    {{{html}}}
+
+</div>
