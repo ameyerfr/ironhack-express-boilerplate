@@ -1,0 +1,32 @@
+Squad Work:
+
+Write down the steps to create a brand new express application including :
+- a starting script
+- a valid git repo
+- hbs templating
+- 3 pages (home, about, contact)
+- some basic styling
+- a frontend script listening to clicks on an element
+- an image
+
+------- A initial steps (terminal)
+
+$ mkdir my-express-project
+$ cd ./my-express-project
+$ npm init -y
+$ git init
+$ npm install express hbs dotenv
+$ touch server.js .env .gitignore 
+$ mkdir ./public ./public/css ./public/js ./public/assets ./public/assets/img ./views ./views/partials
+$ touch ./views/layout.hbs ./views/home.hbs ./views/about.hbs ./views/contact.hbs
+$ touch ./public/css/base.css ./public/js/home.js
+
+
+
+------- B file coding (vs code)
+
+@package.json :
+
+"scripts": {
+    "dev": "nodemon ./server.js -e .js,.hbs"
+}
