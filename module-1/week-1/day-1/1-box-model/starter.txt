@@ -1,9 +1,0 @@
-Shall we play a game ?
-
-As a pair, come present one css-selector solution to the cohort !
-
-It's the perfect occasion to present yourself : 
-
-- who you are
-- why you picked webdev 
-- what you expect from the bootcamp
